@@ -1,5 +1,6 @@
 import Section from "@/components/Section";
 import Button from "@/components/Button";
+import AppScreenshot from "@/components/AppScreenshot";
 import Link from "next/link";
 import {
   Users,
@@ -119,6 +120,24 @@ export default function HowItWorksPage() {
           ))}
         </div>
 
+        {/* 일감 등록자 앱 스크린샷 */}
+        <div className="mt-12 flex justify-center gap-8">
+          <AppScreenshot
+            src="/images/ref_intro.PNG"
+            alt="로그인 화면"
+            width={180}
+            height={360}
+            caption="Step 1: 간편 로그인"
+          />
+          <AppScreenshot
+            src="/images/ref_easy_join.PNG"
+            alt="일감 등록 화면"
+            width={180}
+            height={360}
+            caption="Step 2: 일감 등록"
+          />
+        </div>
+
         <div className="text-center mt-12 p-8 bg-primary-50 rounded-2xl max-w-3xl mx-auto">
           <h4 className="text-xl font-bold text-text mb-4">💡 유용한 팁</h4>
           <ul className="text-left space-y-2 text-text-light">
@@ -221,6 +240,24 @@ export default function HowItWorksPage() {
           ))}
         </div>
 
+        {/* 일감 참여자 앱 스크린샷 */}
+        <div className="mt-12 flex justify-center gap-8">
+          <AppScreenshot
+            src="/images/ref_work_map.PNG"
+            alt="지도 화면"
+            width={180}
+            height={360}
+            caption="Step 1: 지도에서 일감 탐색"
+          />
+          <AppScreenshot
+            src="/images/ref_work_map_sel.PNG"
+            alt="지도에서 일감 선택 화면"
+            width={180}
+            height={360}
+            caption="Step 2: 일감 상세보기"
+          />
+        </div>
+
         <div className="text-center mt-12 p-8 bg-secondary-50 rounded-2xl max-w-3xl mx-auto">
           <h4 className="text-xl font-bold text-text mb-4">💡 유용한 팁</h4>
           <ul className="text-left space-y-2 text-text-light">
@@ -251,6 +288,17 @@ export default function HowItWorksPage() {
               전화번호 노출 없이 인앱 메시징으로 안전하게 소통하여 개인정보를 보호합니다
             </p>
           </div>
+        </div>
+        
+        {/* 프로필 관리 앱 스크린샷 */}
+        <div className="mt-12 flex justify-center">
+          <AppScreenshot
+            src="/images/ref_profile.PNG"
+            alt="프로필 화면"
+            width={200}
+            height={400}
+            caption="Step 3: 프로필 관리 및 설정"
+          />
         </div>
       </Section>
 

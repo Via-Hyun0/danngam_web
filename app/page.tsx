@@ -3,6 +3,7 @@ import Button from "@/components/Button";
 import Section from "@/components/Section";
 import AnimatedSection from "@/components/AnimatedSection";
 import Counter from "@/components/Counter";
+import AppScreenshot from "@/components/AppScreenshot";
 import {
   Phone,
   Clock,
@@ -74,6 +75,20 @@ export default function Home() {
                 <span>채팅 내 계약서 작성</span>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* App Screenshot - 앱 소개 화면 */}
+        <div className="container-custom relative z-10 pb-16">
+          <div className="flex justify-center">
+            <AppScreenshot
+              src="/images/ref_onboarding.PNG"
+              alt="단감 앱 소개 화면"
+              width={250}
+              height={500}
+              priority={true}
+              caption="단감 앱을 소개합니다"
+            />
           </div>
         </div>
       </section>
@@ -187,6 +202,26 @@ export default function Home() {
               <p className="text-text-light">전국 지역</p>
             </div>
           </AnimatedSection>
+        </div>
+      </Section>
+
+      {/* 실제 앱 화면 섹션 */}
+      <Section background="white" title="실제 앱 화면" subtitle="단감의 완성된 앱을 직접 확인해보세요" centered>
+        <div className="flex justify-center gap-8">
+          <AppScreenshot
+            src="/images/ref_work_map.PNG"
+            alt="지도 화면"
+            width={200}
+            height={400}
+            caption="지도에서 일감 탐색"
+          />
+          <AppScreenshot
+            src="/images/ref_work_list.PNG"
+            alt="일감 리스트 화면"
+            width={200}
+            height={400}
+            caption="일감 리스트 보기"
+          />
         </div>
       </Section>
 
