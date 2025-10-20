@@ -10,18 +10,6 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          50: "#f7f9f0",
-          100: "#eef3dc",
-          200: "#dfe8bd",
-          300: "#c9d794",
-          400: "#b5c76f",
-          500: "#95A543",
-          600: "#7a8935",
-          700: "#5f6b2b",
-          800: "#4d5627",
-          900: "#414824",
-        },
-        secondary: {
           50: "#fef5f1",
           100: "#fde9df",
           200: "#fbd0be",
@@ -32,6 +20,18 @@ const config: Config = {
           700: "#b53412",
           800: "#932d15",
           900: "#782915",
+        },
+        secondary: {
+          50: "#f7f9f0",
+          100: "#eef3dc",
+          200: "#dfe8bd",
+          300: "#c9d794",
+          400: "#b5c76f",
+          500: "#95A543",
+          600: "#7a8935",
+          700: "#5f6b2b",
+          800: "#4d5627",
+          900: "#414824",
         },
         background: "#FFF8E9",
         text: {
@@ -75,8 +75,8 @@ const config: Config = {
         soft: "0 2px 8px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06)",
         medium: "0 4px 16px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.08)",
         large: "0 8px 32px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08)",
-        primary: "0 8px 24px rgba(149, 165, 67, 0.2)",
-        secondary: "0 8px 24px rgba(236, 103, 55, 0.2)",
+        primary: "0 8px 24px rgba(236, 103, 55, 0.2)",
+        secondary: "0 8px 24px rgba(149, 165, 67, 0.2)",
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out",
@@ -105,9 +105,9 @@ const config: Config = {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-primary": "linear-gradient(135deg, #95A543 0%, #7a8935 100%)",
+        "gradient-primary": "linear-gradient(135deg, #EC6737 0%, #d94316 100%)",
         "gradient-secondary":
-          "linear-gradient(135deg, #EC6737 0%, #d94316 100%)",
+          "linear-gradient(135deg, #95A543 0%, #7a8935 100%)",
         "gradient-soft": "linear-gradient(135deg, #FFF8E9 0%, #fef5f1 100%)",
       },
     },

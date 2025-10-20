@@ -21,8 +21,8 @@ export default function Navigation() {
   const menuItems = [
     { href: "/about", label: "소개" },
     { href: "/how-it-works", label: "작동방식" },
-    { href: "/for-farmers", label: "농부" },
-    { href: "/for-workers", label: "작업자" },
+    { href: "/for-farmers", label: "일감 등록" },
+    { href: "/for-workers", label: "일감 찾기" },
     { href: "/features", label: "기능" },
     { href: "/safety", label: "안전" },
     { href: "/faq", label: "FAQ" },

@@ -14,7 +14,7 @@ export default function Footer() {
               <h3 className="text-2xl font-bold">단감</h3>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              농부와 작업자를 직접 이어주는
+              누구나 일감을 등록하고 참여할 수 있는
               <br />
               가장 간단하고 안전한
               <br />
@@ -62,7 +62,7 @@ export default function Footer() {
                   href="/for-farmers"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  농부를 위한 단감
+                  일감 등록하기
                 </Link>
               </li>
               <li>
@@ -70,7 +70,7 @@ export default function Footer() {
                   href="/for-workers"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  작업자를 위한 단감
+                  일감 찾기
                 </Link>
               </li>
             </ul>

@@ -17,81 +17,81 @@ export default function FeaturesPage() {
   const features = [
     {
       icon: Phone,
-      title: "전화번호만으로 간편 가입",
+      title: "카카오/Apple 로그인으로 간편 가입",
       description:
-        "복잡한 절차 없이 전화번호 인증만으로 1분 내에 서비스를 시작할 수 있습니다. SMS 인증 코드 자동 발송, 본인인증 불필요.",
+        "복잡한 절차 없이 카카오톡 또는 Apple ID로 1분 내에 서비스를 시작할 수 있습니다. 본인인증 불필요, 즉시 이용 가능.",
       color: "primary",
       badge: "필수",
     },
     {
       icon: Users,
-      title: "농부: 3분 내 작업 등록",
+      title: "3분 내 일감 등록",
       description:
-        "작물, 기간, 급여, 위치 등 핵심 정보만으로 빠르게 구인 공고를 올릴 수 있습니다. 큰 글씨와 버튼으로 사용 편리.",
+        "작물, 기간, 급여, 위치 등 핵심 정보만으로 빠르게 일감을 등록할 수 있습니다. 큰 글씨와 버튼으로 사용 편리.",
       color: "primary",
       badge: "핵심",
     },
     {
       icon: MapPin,
-      title: "작업자: 위치 기반 실시간 작업 탐색",
+      title: "위치 기반 실시간 일감 탐색",
       description:
-        "내 현재 위치 근처의 농업 작업 정보를 지도와 리스트로 실시간 확인합니다. 작물별 아이콘, 거리 표시, 자동 클러스터링.",
+        "내 현재 위치 근처의 농업 일감 정보를 지도와 리스트로 실시간 확인합니다. 작물별 아이콘, 거리 표시, 자동 클러스터링.",
       color: "secondary",
       badge: "핵심",
     },
     {
-      icon: Shield,
-      title: "상호 동의 기반 연락처 교환",
+      icon: MessageCircle,
+      title: "1:1 인앱 메시징",
       description:
-        "양측의 명시적인 동의 하에만 전화번호가 교환되어 개인정보를 보호하고 안전한 소통을 보장합니다. 동의 없이 절대 번호 공개 안 됨.",
+        "전화번호 노출 없이 안전한 1:1 채팅으로 소통합니다. 실시간 메시지 전송, 읽음 확인, 메시지 히스토리 관리.",
       color: "primary",
-      badge: "안전",
+      badge: "핵심",
+    },
+    {
+      icon: CheckCircle,
+      title: "선택형 답변 시스템",
+      description:
+        "타이핑이 어려운 사용자를 위한 빠른 응답 버튼을 제공합니다. 자주 사용하는 답변을 미리 설정하여 원터치로 응답.",
+      color: "secondary",
+      badge: "편의",
+    },
+    {
+      icon: Shield,
+      title: "채팅 내 계약서 작성",
+      description:
+        "대화 중에 바로 계약서를 작성하고 양방향 서명할 수 있습니다. 전화번호 노출 없이 안전하게 계약을 체결.",
+      color: "primary",
+      badge: "핵심",
     },
     {
       icon: Sparkles,
       title: "완전 무료 서비스",
       description:
-        "중개 수수료 없이 모든 기능을 무료로 이용할 수 있어 농부와 작업자 모두에게 경제적 부담이 없습니다. 영원히 무료.",
+        "중개 수수료 없이 모든 기능을 무료로 이용할 수 있어 일감 등록자와 참여자 모두에게 경제적 부담이 없습니다. 영원히 무료.",
       color: "secondary",
       badge: "혜택",
     },
     {
-      icon: Clock,
-      title: "통화 가능 시간 사전 공유",
+      icon: Users,
+      title: "양방향 사용 가능",
       description:
-        "농부와 작업자 모두 통화 가능한 시간을 미리 설정하여 불필요한 연락을 방지하고 효율적인 소통을 돕습니다.",
+        "역할 구분 없이 누구나 일감을 등록하고 참여할 수 있습니다. 농한기에는 일감을 찾고, 농번기에는 일감을 등록하는 등 상황에 따라 자유롭게 이용.",
       color: "primary",
-      badge: "편의",
-    },
-    {
-      icon: CheckCircle,
-      title: "농부: 선택적 연락 수락",
-      description:
-        "작업자들이 보낸 연락 요청을 확인하고, 마음에 드는 작업자에게만 연락처를 공개할 수 있습니다. 선택권은 농부에게.",
-      color: "primary",
-      badge: "제어",
-    },
-    {
-      icon: MessageCircle,
-      title: "작업자: 농부에게 한마디 메시지",
-      description:
-        "연락 요청 시 농부에게 자신을 어필할 수 있는 간단한 메시지를 함께 보낼 수 있습니다. 경험, 희망 사항 등 전달.",
-      color: "secondary",
-      badge: "소통",
+      badge: "혁신",
     },
     {
       icon: AlertTriangle,
       title: "신고 기능 및 자동 제재",
       description:
-        "부적절한 작업이나 사용자를 신고할 수 있으며, 일정 횟수 이상 신고 시 자동 제재 시스템이 작동하여 안전한 환경을 유지합니다.",
+        "부적절한 일감이나 사용자를 신고할 수 있으며, 일정 횟수 이상 신고 시 자동 제재 시스템이 작동하여 안전한 환경을 유지합니다.",
       color: "primary",
       badge: "안전",
     },
     {
       icon: TrendingUp,
-      title: "내 연락 요청 현황 (작업자)",
+      title: "메시지 현황 관리",
       description:
-        "내가 보낸 연락 요청의 상태(대기중, 수락됨, 만료됨)를 한눈에 확인하고 관리할 수 있습니다. 진행 상태 추적.",
+        "내가 보낸 메시지의 상태(대기중, 읽음, 만료됨)를 한눈에 확인하고 관리할 수 있습니다. 진행 상태 추적 및 알림.",
       color: "secondary",
       badge: "관리",
     },
@@ -99,7 +99,7 @@ export default function FeaturesPage() {
       icon: Bell,
       title: "실시간 푸시 알림",
       description:
-        "새로운 연락 요청, 연락처 교환 완료 등 중요한 정보를 실시간 푸시 알림으로 받아볼 수 있습니다. 5초 이내 즉시 전송.",
+        "새로운 메시지, 계약서 작성 요청 등 중요한 정보를 실시간 푸시 알림으로 받아볼 수 있습니다. 5초 이내 즉시 전송.",
       color: "primary",
       badge: "필수",
     },
@@ -114,7 +114,7 @@ export default function FeaturesPage() {
             <span className="gradient-text">단감의 핵심 기능</span>
           </h1>
           <p className="text-xl text-text-light max-w-3xl mx-auto">
-            농부와 작업자 모두에게 최적화된 11가지 주요 기능을 소개합니다
+            누구나 일감을 등록하고 참여할 수 있는 11가지 주요 기능을 소개합니다
           </p>
         </div>
       </section>
@@ -193,24 +193,24 @@ export default function FeaturesPage() {
               <Users className="w-7 h-7 text-white" />
             </div>
             <h3 className="text-2xl font-bold text-text mb-4">
-              농부를 위한 기능
+              일감 등록자를 위한 기능
             </h3>
             <ul className="space-y-3 text-text-light">
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" />
-                <span>3분 내 간단한 작업 등록</span>
+                <span>3분 내 간단한 일감 등록</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" />
-                <span>연락 요청 관리 및 작업자 선택</span>
+                <span>1:1 채팅으로 지원자와 소통</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" />
-                <span>선택적 연락 수락으로 개인정보 보호</span>
+                <span>채팅 내에서 계약서 작성 및 서명</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" />
-                <span>푸시 알림으로 즉시 확인</span>
+                <span>푸시 알림으로 새 메시지 즉시 확인</span>
               </li>
             </ul>
           </div>
@@ -220,24 +220,24 @@ export default function FeaturesPage() {
               <MapPin className="w-7 h-7 text-white" />
             </div>
             <h3 className="text-2xl font-bold text-text mb-4">
-              작업자를 위한 기능
+              일감 참여자를 위한 기능
             </h3>
             <ul className="space-y-3 text-text-light">
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-secondary-500 flex-shrink-0 mt-0.5" />
-                <span>위치 기반 실시간 작업 탐색</span>
+                <span>위치 기반 실시간 일감 탐색</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-secondary-500 flex-shrink-0 mt-0.5" />
-                <span>간편한 관심 표시 및 메시지 전달</span>
+                <span>간편한 메시지 보내기 및 1:1 채팅</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-secondary-500 flex-shrink-0 mt-0.5" />
-                <span>내 연락 요청 현황 추적</span>
+                <span>내 메시지 현황 추적</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-secondary-500 flex-shrink-0 mt-0.5" />
-                <span>알림으로 농부 연락 즉시 확인</span>
+                <span>알림으로 새 메시지 즉시 확인</span>
               </li>
             </ul>
           </div>

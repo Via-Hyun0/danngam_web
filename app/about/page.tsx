@@ -24,7 +24,7 @@ export default function AboutPage() {
             단감은 <span className="gradient-text">어떤 플랫폼</span>인가요?
           </h1>
           <p className="text-xl text-text-light max-w-3xl mx-auto">
-            농업의 미래를 위한 가장 간단하고 안전한 인력 매칭 서비스를
+            농업의 미래를 위한 가장 간단하고 안전한 일감 매칭 서비스를
             제공합니다
           </p>
         </div>
@@ -39,10 +39,10 @@ export default function AboutPage() {
             <span className="font-semibold text-text">
               농촌의 고질적인 일손 부족 문제
             </span>
-            를 해결하고, 계절 농업 노동자들이{" "}
-            <span className="font-semibold text-text">안정적으로 일자리</span>를
-            찾을 수 있도록 돕는 정보 중개 플랫폼입니다. 우리는 복잡한 절차와
-            높은 수수료 없이, 농부와 작업자가 서로를 신뢰하고 직접 소통할 수
+            를 해결하고, 누구나{" "}
+            <span className="font-semibold text-text">일감을 등록하고 참여</span>할 수
+            있도록 돕는 메시징 기반 매칭 플랫폼입니다. 우리는 복잡한 절차와
+            높은 수수료 없이, 전화번호 노출 없이 안전하게 소통할 수
             있는{" "}
             <span className="font-semibold text-text">
               가장 간단하고 안전한 방법
@@ -59,7 +59,7 @@ export default function AboutPage() {
             <div className="w-14 h-14 bg-primary-500 rounded-2xl flex items-center justify-center mb-6">
               <Users className="w-7 h-7 text-white" />
             </div>
-            <h3 className="text-2xl font-bold text-text mb-4">농부의 인력난</h3>
+            <h3 className="text-2xl font-bold text-text mb-4">일감 등록자의 인력난</h3>
             <ul className="space-y-3 text-text-light">
               <li className="flex items-start gap-3">
                 <span className="text-primary-500 font-bold mt-1">•</span>
@@ -70,11 +70,11 @@ export default function AboutPage() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary-500 font-bold mt-1">•</span>
-                <span>개인정보 유출 우려와 스팸 전화로 인한 피로감</span>
+                <span>전화번호 노출 우려와 스팸 전화로 인한 피로감</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary-500 font-bold mt-1">•</span>
-                <span>신뢰할 수 있는 작업자를 찾기 어려움</span>
+                <span>신뢰할 수 있는 지원자를 찾기 어려움</span>
               </li>
             </ul>
           </div>
@@ -84,13 +84,13 @@ export default function AboutPage() {
               <TrendingUp className="w-7 h-7 text-white" />
             </div>
             <h3 className="text-2xl font-bold text-text mb-4">
-              작업자의 일자리 불안정
+              일감 참여자의 일자리 불안정
             </h3>
             <ul className="space-y-3 text-text-light">
               <li className="flex items-start gap-3">
                 <span className="text-secondary-500 font-bold mt-1">•</span>
                 <span>
-                  계절에 따라 일자리를 찾아 이동해야 하는 작업자들은 안정적인
+                  계절에 따라 일감을 찾아 이동해야 하는 참여자들은 안정적인
                   정보 확보에 어려움
                 </span>
               </li>
@@ -111,28 +111,28 @@ export default function AboutPage() {
       <Section
         background="white"
         title="단감의 솔루션"
-        subtitle="농부와 작업자 간의 직접적인 연결을 통해 이러한 문제들을 해결합니다"
+        subtitle="누구나 일감을 등록하고 참여할 수 있는 안전한 연결을 통해 이러한 문제들을 해결합니다"
         centered
       >
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[
             {
               icon: "⚡",
-              title: "간단한 정보 교환",
+              title: "간단한 일감 등록",
               description:
-                "농부는 3분 내에 작업을 등록하고, 작업자는 위치 기반으로 실시간 작업 정보를 확인합니다",
+                "누구나 3분 내에 일감을 등록하고, 위치 기반으로 실시간 일감 정보를 확인합니다",
             },
             {
               icon: "🔒",
-              title: "안전한 연락처 교환",
+              title: "안전한 인앱 메시징",
               description:
-                "양측의 명시적인 동의 하에만 전화번호가 교환되어 개인정보를 보호하고 안전한 소통을 가능하게 합니다",
+                "전화번호 노출 없이 1:1 채팅으로 안전하게 소통하고, 채팅 내에서 계약서를 작성할 수 있습니다",
             },
             {
               icon: "💝",
               title: "완전 무료 서비스",
               description:
-                "중개 수수료 없이 모든 서비스를 무료로 제공하여 농부와 작업자 모두에게 경제적 부담을 덜어줍니다",
+                "중개 수수료 없이 모든 서비스를 무료로 제공하여 일감 등록자와 참여자 모두에게 경제적 부담을 덜어줍니다",
             },
           ].map((item, idx) => (
             <div key={idx} className="card card-hover text-center">
@@ -161,7 +161,7 @@ export default function AboutPage() {
               title: "안전",
               subtitle: "Safety",
               description:
-                "개인정보 보호와 신뢰할 수 있는 정보 교환을 최우선으로 합니다",
+                "전화번호 노출 없이 안전한 메시징과 신뢰할 수 있는 정보 교환을 최우선으로 합니다",
               color: "secondary",
             },
             {
@@ -177,7 +177,7 @@ export default function AboutPage() {
               title: "상생",
               subtitle: "Co-prosperity",
               description:
-                "농부와 작업자 모두에게 이익이 되는 지속 가능한 생태계를 구축합니다",
+                "일감 등록자와 참여자 모두에게 이익이 되는 지속 가능한 생태계를 구축합니다",
               color: "secondary",
             },
           ].map((value, idx) => (

@@ -1,6 +1,6 @@
 # 단감 웹사이트 (Danngam Website)
 
-> 농부와 작업자를 직접 이어주는 가장 간단하고 안전한 무료 매칭 플랫폼
+> 누구나 일감을 등록하고 참여할 수 있는 가장 간단하고 안전한 무료 매칭 플랫폼
 
 [![Version](https://img.shields.io/badge/version-0.1.0-brightgreen.svg)](https://github.com/your-repo/danngam_web)
 [![Next.js](https://img.shields.io/badge/Next.js-14.2-black)](https://nextjs.org/)
@@ -9,7 +9,7 @@
 
 ## 📖 프로젝트 소개
 
-단감 웹사이트는 농업 인력 매칭 플랫폼 '단감'을 소개하는 공식 웹사이트입니다. 세계 최고 수준의 디자인과 사용자 경험을 제공하며, 농부와 작업자 모두에게 플랫폼의 가치를 명확하게 전달합니다.
+단감 웹사이트는 농업 인력 매칭 플랫폼 '단감'을 소개하는 공식 웹사이트입니다. 세계 최고 수준의 디자인과 사용자 경험을 제공하며, 누구나 일감을 등록하고 참여할 수 있는 플랫폼의 가치를 명확하게 전달합니다.
 
 ### ✨ 주요 특징
 
@@ -62,8 +62,8 @@ npm start
 | `/`             | 홈페이지 (Landing Page) |
 | `/about`        | 플랫폼 소개             |
 | `/how-it-works` | 작동 방식               |
-| `/for-farmers`  | 농부를 위한 단감        |
-| `/for-workers`  | 작업자를 위한 단감      |
+| `/for-farmers`  | 일감 등록하기          |
+| `/for-workers`  | 일감 찾기              |
 | `/features`     | 기능 소개               |
 | `/safety`       | 안전 및 개인정보보호    |
 | `/faq`          | 자주 묻는 질문          |
@@ -75,8 +75,8 @@ npm start
 
 ### 컬러 팔레트
 
-- **Primary (Green)**: #95A543 - 농업, 자연, 성장
-- **Secondary (Orange)**: #EC6737 - 단감 색상, 액센트
+- **Primary (Orange)**: #EC6737 - 단감 색상, 메인 브랜드 컬러
+- **Secondary (Green)**: #95A543 - 농업, 자연, 성장
 - **Background**: #FFF8E9 - 따뜻한 크림색
 - **Text**: #1a1a1a / #4a5568 / #718096 - 계층적 텍스트
 
@@ -202,6 +202,7 @@ npx tsc --noEmit
 - [ ] 다국어 지원 (영어)
 - [ ] 향상된 애니메이션
 - [ ] 사용자 후기 섹션
+- [ ] PRD v1.7 기능 반영 (메시징, 계약서)
 
 ### v1.0.0 (계획)
 

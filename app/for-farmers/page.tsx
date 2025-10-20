@@ -18,11 +18,10 @@ export default function ForFarmersPage() {
         <div className="container-custom text-center">
           <Users className="w-16 h-16 text-primary-500 mx-auto mb-6" />
           <h1 className="text-5xl md:text-6xl font-bold text-text mb-6">
-            농부님, <span className="gradient-text">일손 걱정</span> 이제
-            그만하세요
+            일감 등록할 때, <span className="gradient-text">간단하게</span> 시작하세요
           </h1>
           <p className="text-xl text-text-light max-w-3xl mx-auto mb-8">
-            3분 만에 작업 등록, 관심있는 작업자만 선택하세요
+            3분 만에 일감 등록, 메시징으로 안전하게 소통하세요
           </p>
           <Button size="xl" className="group">
             지금 시작하기
@@ -34,7 +33,7 @@ export default function ForFarmersPage() {
       {/* Pain Points */}
       <Section
         background="white"
-        title="농부님들이 겪는 어려움"
+        title="일감 등록할 때 겪는 어려움"
         subtitle="단감이 이해하고 해결합니다"
         centered
       >
@@ -48,12 +47,12 @@ export default function ForFarmersPage() {
             {
               title: "복잡한 절차 부담",
               problem: "복잡한 앱 사용이 어려움",
-              solution: "5단계만으로 작업 등록 완료, 큰 글씨와 간단한 UI",
+              solution: "3단계만으로 일감 등록 완료, 큰 글씨와 간단한 UI",
             },
             {
-              title: "스팸 전화 우려",
+              title: "전화번호 노출 우려",
               problem: "번호 공개 시 스팸 전화 걱정",
-              solution: "내가 선택한 작업자만 내 번호를 받음",
+              solution: "인앱 메시징으로 전화번호 노출 없이 안전하게 소통",
             },
             {
               title: "높은 중개 수수료",
@@ -61,9 +60,9 @@ export default function ForFarmersPage() {
               solution: "100% 무료, 영원히",
             },
             {
-              title: "믿을 수 있는 작업자 선택",
-              problem: "어떤 작업자가 좋을지 모름",
-              solution: "작업자 정보, 통화 가능 시간, 메시지를 보고 선택",
+              title: "믿을 수 있는 지원자 선택",
+              problem: "어떤 지원자가 좋을지 모름",
+              solution: "지원자 정보, 메시지 내용을 보고 채팅으로 소통 후 선택",
             },
           ].map((item, idx) => (
             <div key={idx} className="card card-hover">
@@ -93,27 +92,27 @@ export default function ForFarmersPage() {
               icon: "⚡",
               title: "빠른 등록",
               items: [
-                "3분 이내 작업 등록 완료",
-                "즉시 작업자들에게 노출",
+                "3분 이내 일감 등록 완료",
+                "즉시 지원자들에게 노출",
                 "수정도 언제든지 가능",
               ],
             },
             {
               icon: "🔒",
-              title: "안전한 개인정보 보호",
+              title: "안전한 인앱 메시징",
               items: [
-                "내가 수락한 작업자만 내 번호 확인",
-                "동의 없이 번호 공개 절대 없음",
+                "전화번호 노출 없이 채팅으로 소통",
+                "1:1 메시징으로 안전한 대화",
                 "개인정보보호법 완벽 준수",
               ],
             },
             {
               icon: "👥",
-              title: "선택권은 농부님께",
+              title: "선택권은 일감 작성자께",
               items: [
-                "작업자들의 요청을 확인",
-                "마음에 드는 작업자만 선택",
-                "여러 작업자에게 동시 연락 가능",
+                "지원자들의 메시지를 확인",
+                "마음에 드는 지원자만 선택",
+                "여러 지원자와 동시 채팅 가능",
               ],
             },
             {
@@ -152,12 +151,12 @@ export default function ForFarmersPage() {
             {
               title: "사과 수확 시즌 🍎",
               description:
-                "사과 수확 시즌에 긴급하게 5명의 인력이 필요했습니다. 단감에 작업을 등록한 후 하루 만에 12명의 작업자로부터 연락 요청을 받았고, 그 중 경험이 있고 가까운 거리에 사는 작업자 5명을 선택했습니다.",
+                "사과 수확 시즌에 긴급하게 5명의 인력이 필요했습니다. 단감에 일감을 등록한 후 하루 만에 12명의 지원자로부터 메시지를 받았고, 채팅으로 소통한 후 경험이 있고 가까운 거리에 사는 지원자 5명을 선택했습니다.",
             },
             {
               title: "포도밭 전지 작업 🍇",
               description:
-                "포도밭 전지 작업에 2주간 도움이 필요했습니다. 단감에서 통화 가능 시간을 명확히 설정하니, 작업자들이 적절한 시간에만 연락 요청을 보내서 편리했습니다.",
+                "포도밭 전지 작업에 2주간 도움이 필요했습니다. 단감에서 메시징으로 소통하니, 지원자들과 편리하게 조건을 협의할 수 있었고, 채팅 내에서 바로 계약서를 작성했습니다.",
             },
             {
               title: "딸기 하우스 정리 🍓",
@@ -178,28 +177,28 @@ export default function ForFarmersPage() {
       </Section>
 
       {/* Features for Farmers */}
-      <Section background="gradient" title="농부를 위한 주요 기능" centered>
+      <Section background="gradient" title="일감 등록자를 위한 주요 기능" centered>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {[
             {
               icon: Phone,
-              title: "간단한 작업 등록",
-              desc: "5단계 스텝으로 쉽게",
+              title: "간단한 일감 등록",
+              desc: "3단계 스텝으로 쉽게",
             },
             {
               icon: Users,
-              title: "연락 요청 관리",
-              desc: "한눈에 작업자 정보 확인",
+              title: "채팅으로 지원자와 대화",
+              desc: "1:1 메시징으로 안전하게",
             },
             {
               icon: CheckCircle,
-              title: "선택적 수락",
-              desc: "원하는 작업자만 선택",
+              title: "계약서 작성",
+              desc: "채팅 내에서 바로 계약서 작성",
             },
-            { icon: Shield, title: "푸시 알림", desc: "새 요청 즉시 확인" },
+            { icon: Shield, title: "푸시 알림", desc: "새 메시지 즉시 확인" },
             {
               icon: Sparkles,
-              title: "작업 수정/삭제",
+              title: "일감 수정/삭제",
               desc: "언제든지 관리 가능",
             },
           ].map((feature, idx) => (
@@ -221,7 +220,7 @@ export default function ForFarmersPage() {
         <div className="card bg-gradient-to-br from-primary-500 to-primary-700 text-white text-center max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">지금 바로 시작하세요</h2>
           <p className="text-xl mb-8 text-primary-50">
-            일손 구하기, 단감으로 간단하고 안전하게
+            일감 등록하기, 단감으로 간단하고 안전하게
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/how-it-works">

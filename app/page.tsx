@@ -40,13 +40,13 @@ export default function Home() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold text-text mb-6 leading-tight">
-              농업 일손,
+              농업 일감,
               <br />
               <span className="gradient-animated">이제 간단하게</span> 연결하세요
             </h1>
 
             <p className="text-xl md:text-2xl text-text-light mb-12 max-w-3xl mx-auto leading-relaxed">
-              농부와 작업자를 직접 이어주는 가장 간단하고 안전한 무료 매칭
+              누구나 일감을 등록하고 참여할 수 있는 가장 간단하고 안전한 무료 매칭
               플랫폼
             </p>
 
@@ -63,15 +63,15 @@ export default function Home() {
             <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-text-light">
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-primary-500" />
-                <span>안전한 개인정보 보호</span>
+                <span>안전한 인앱 메시징</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-primary-500" />
-                <span>3분 내 작업 등록</span>
+                <span>3분 내 일감 등록</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-primary-500" />
-                <span>위치 기반 실시간 매칭</span>
+                <span>채팅 내 계약서 작성</span>
               </div>
             </div>
           </div>
@@ -81,18 +81,18 @@ export default function Home() {
       {/* Problem Statement Section */}
       <Section background="white" title="이런 어려움, 겪고 계신가요?" centered>
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-          {/* 농부의 고민 */}
+          {/* 일감 등록할 때 */}
           <div className="card card-hover group">
             <div className="w-14 h-14 bg-gradient-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <Users className="w-7 h-7 text-white" />
             </div>
-            <h3 className="text-2xl font-bold text-text mb-6">농부의 고민</h3>
+            <h3 className="text-2xl font-bold text-text mb-6">일감 등록할 때</h3>
             <ul className="space-y-4">
               {[
                 { icon: Phone, text: "일손 구하기가 너무 어려워요" },
                 { icon: Clock, text: "수확 시즌인데 인력을 못 구하면 어쩌죠?" },
                 { icon: "💰", text: "중개 수수료가 부담스러워요" },
-                { icon: Shield, text: "개인정보 유출이 걱정돼요" },
+                { icon: Shield, text: "전화번호 노출이 걱정돼요" },
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start gap-4">
                   {typeof item.icon === "string" ? (
@@ -108,16 +108,16 @@ export default function Home() {
             </ul>
           </div>
 
-          {/* 작업자의 고민 */}
+          {/* 일감 찾을 때 */}
           <div className="card card-hover group">
             <div className="w-14 h-14 bg-gradient-secondary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <MapPin className="w-7 h-7 text-white" />
             </div>
-            <h3 className="text-2xl font-bold text-text mb-6">작업자의 고민</h3>
+            <h3 className="text-2xl font-bold text-text mb-6">일감 찾을 때</h3>
             <ul className="space-y-4">
               {[
-                { icon: MapPin, text: "가까운 일자리 정보를 찾기 어려워요" },
-                { icon: Phone, text: "농부님 연락처를 어떻게 알 수 있을까요?" },
+                { icon: MapPin, text: "가까운 일감 정보를 찾기 어려워요" },
+                { icon: Phone, text: "일감 작성자와 어떻게 연락할까요?" },
                 { icon: Clock, text: "불안정한 수입 때문에 고민이에요" },
                 { icon: "🚗", text: "먼 거리 이동은 힘들어요" },
               ].map((item, idx) => (
@@ -160,7 +160,7 @@ export default function Home() {
               <h3 className="text-3xl font-bold text-text mb-2">
                 <Counter end={3891} suffix="+" />
               </h3>
-              <p className="text-text-light">성공 매칭</p>
+              <p className="text-text-light">계약 체결</p>
             </div>
           </AnimatedSection>
 
@@ -172,7 +172,7 @@ export default function Home() {
               <h3 className="text-3xl font-bold text-text mb-2">
                 <Counter end={95} suffix="%" />
               </h3>
-              <p className="text-text-light">만족도</p>
+              <p className="text-text-light">계약 체결률</p>
             </div>
           </AnimatedSection>
 
@@ -201,26 +201,26 @@ export default function Home() {
           {[
             {
               icon: Zap,
-              title: "3분 만에 작업 등록",
+              title: "3분 만에 일감 등록",
               description: "복잡한 절차 없이 빠르게 인력 구인",
               color: "primary",
             },
             {
               icon: MapPin,
               title: "위치 기반 실시간 매칭",
-              description: "지도에서 근처 작업을 바로 확인",
+              description: "지도에서 근처 일감을 바로 확인",
               color: "secondary",
             },
             {
               icon: Shield,
-              title: "안전한 연락처 교환",
-              description: "상호 동의 후에만 번호 공개",
+              title: "안전한 인앱 메시징",
+              description: "전화번호 노출 없이 채팅으로 소통",
               color: "primary",
             },
             {
               icon: Sparkles,
-              title: "100% 무료",
-              description: "중개 수수료 없음",
+              title: "채팅 내 계약서 작성",
+              description: "대화 중에 바로 계약서 작성 및 서명",
               color: "secondary",
             },
           ].map((item, idx) => (
@@ -242,32 +242,32 @@ export default function Home() {
       {/* How It Works Section */}
       <Section background="white" title="이렇게 간단합니다" centered>
         <div className="grid md:grid-cols-2 gap-16">
-          {/* 농부 */}
+          {/* 일감 등록자 */}
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 rounded-full mb-8">
               <Users className="w-5 h-5 text-primary-700" />
               <span className="text-sm font-semibold text-primary-700">
-                농부
+                일감 등록자
               </span>
             </div>
             <div className="space-y-6">
               {[
                 {
                   step: "1",
-                  title: "작업 등록",
+                  title: "일감 등록",
                   desc: "필요한 인력 정보 입력 (3분)",
                 },
                 {
                   step: "2",
-                  title: "작업자 요청 확인",
-                  desc: "관심있는 작업자 목록 확인",
+                  title: "메시지 확인",
+                  desc: "관심있는 지원자들의 메시지 확인",
                 },
                 {
                   step: "3",
-                  title: "작업자 선택",
-                  desc: "마음에 드는 작업자 선택",
+                  title: "채팅으로 소통",
+                  desc: "1:1 메시징으로 조건 협의",
                 },
-                { step: "4", title: "직접 통화", desc: "전화로 세부사항 협의" },
+                { step: "4", title: "계약서 작성", desc: "채팅 내에서 계약서 작성 및 서명" },
               ].map((item) => (
                 <div key={item.step} className="flex gap-4">
                   <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center flex-shrink-0 shadow-primary">
@@ -286,32 +286,32 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 작업자 */}
+          {/* 일감 참여자 */}
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary-100 rounded-full mb-8">
               <MapPin className="w-5 h-5 text-secondary-700" />
               <span className="text-sm font-semibold text-secondary-700">
-                작업자
+                일감 참여자
               </span>
             </div>
             <div className="space-y-6">
               {[
                 {
                   step: "1",
-                  title: "근처 작업 탐색",
-                  desc: "지도에서 가까운 일자리 확인",
+                  title: "일감 탐색",
+                  desc: "지도에서 가까운 일감 확인",
                 },
                 {
                   step: "2",
-                  title: "관심 표시",
-                  desc: "원하는 작업에 연락 요청",
+                  title: "메시지 보내기",
+                  desc: "관심있는 일감에 메시지 전송",
                 },
                 {
                   step: "3",
-                  title: "농부 수락 대기",
-                  desc: "농부의 연락 기다리기",
+                  title: "채팅으로 소통",
+                  desc: "일감 작성자와 1:1 대화",
                 },
-                { step: "4", title: "직접 통화", desc: "농부와 일정 조율" },
+                { step: "4", title: "계약서 서명", desc: "채팅 내에서 계약서 서명" },
               ].map((item) => (
                 <div key={item.step} className="flex gap-4">
                   <div className="w-12 h-12 bg-gradient-secondary rounded-xl flex items-center justify-center flex-shrink-0 shadow-secondary">
@@ -344,17 +344,17 @@ export default function Home() {
             {
               emoji: "🗺️",
               title: "지도 기반 탐색",
-              desc: "작업 위치를 한눈에",
+              desc: "일감 위치를 한눈에",
             },
             {
-              emoji: "🤝",
-              title: "동의 기반 연락처 교환",
-              desc: "안전하게 정보 공유",
+              emoji: "💬",
+              title: "1:1 인앱 메시징",
+              desc: "전화번호 노출 없이 안전하게",
             },
             {
-              emoji: "⏰",
-              title: "전화 가능 시간 공유",
-              desc: "불필요한 연락 방지",
+              emoji: "📝",
+              title: "선택형 답변 시스템",
+              desc: "타이핑 부담 없는 빠른 응답",
             },
             {
               emoji: "🔔",
@@ -362,9 +362,9 @@ export default function Home() {
               desc: "중요한 순간 놓치지 않기",
             },
             {
-              emoji: "📊",
-              title: "연락 요청 현황",
-              desc: "진행 상태 한눈에 확인",
+              emoji: "📋",
+              title: "채팅 내 계약서",
+              desc: "대화 중에 바로 계약서 작성",
             },
             { emoji: "🛡️", title: "신고 시스템", desc: "안전한 플랫폼 환경" },
           ].map((feature, idx) => (
@@ -423,13 +423,13 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/for-farmers">
               <Button size="lg" className="group">
-                농부로 시작하기
+                일감 등록하기
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
             <Link href="/for-workers">
               <Button size="lg" variant="secondary" className="group">
-                작업자로 시작하기
+                일감 찾기
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
