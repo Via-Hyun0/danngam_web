@@ -124,31 +124,31 @@ export default function HowItWorksPage() {
         <div className="mt-12 flex justify-center gap-6 flex-wrap">
           <AppScreenshot
             src="/images/ref_intro.PNG"
-            alt="로그인 화면"
+            alt="앱 인트로 화면"
             width={160}
             height={320}
-            caption="Step 1: 간편 로그인"
+            caption="Step 1: 앱 인트로 화면"
           />
           <AppScreenshot
             src="/images/ref_easy_join.PNG"
-            alt="일감 등록 화면"
+            alt="간편 가입 화면"
             width={160}
             height={320}
-            caption="Step 2: 일감 등록"
+            caption="Step 2: 간편 가입"
           />
           <AppScreenshot
             src="/images/ref_work_add_top_view.PNG"
-            alt="일감 상세 페이지 상단"
+            alt="일감 등록 화면 상단"
             width={160}
             height={320}
-            caption="Step 3: 일감 상세 정보"
+            caption="Step 3: 일감 등록 (상단)"
           />
           <AppScreenshot
             src="/images/ref_work_add_bottom_view.PNG"
-            alt="일감 상세 페이지 하단"
+            alt="일감 등록 화면 하단"
             width={160}
             height={320}
-            caption="Step 4: 추가 정보 입력"
+            caption="Step 4: 일감 등록 (하단)"
           />
         </div>
 
