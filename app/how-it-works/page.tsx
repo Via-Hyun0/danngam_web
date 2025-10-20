@@ -121,20 +121,34 @@ export default function HowItWorksPage() {
         </div>
 
         {/* 일감 등록자 앱 스크린샷 */}
-        <div className="mt-12 flex justify-center gap-8">
+        <div className="mt-12 flex justify-center gap-6 flex-wrap">
           <AppScreenshot
             src="/images/ref_intro.PNG"
             alt="로그인 화면"
-            width={180}
-            height={360}
+            width={160}
+            height={320}
             caption="Step 1: 간편 로그인"
           />
           <AppScreenshot
             src="/images/ref_easy_join.PNG"
             alt="일감 등록 화면"
-            width={180}
-            height={360}
+            width={160}
+            height={320}
             caption="Step 2: 일감 등록"
+          />
+          <AppScreenshot
+            src="/images/ref_work_add_top_view.PNG"
+            alt="일감 상세 페이지 상단"
+            width={160}
+            height={320}
+            caption="Step 3: 일감 상세 정보"
+          />
+          <AppScreenshot
+            src="/images/ref_work_add_bottom_view.PNG"
+            alt="일감 상세 페이지 하단"
+            width={160}
+            height={320}
+            caption="Step 4: 추가 정보 입력"
           />
         </div>
 
@@ -241,20 +255,27 @@ export default function HowItWorksPage() {
         </div>
 
         {/* 일감 참여자 앱 스크린샷 */}
-        <div className="mt-12 flex justify-center gap-8">
+        <div className="mt-12 flex justify-center gap-6 flex-wrap">
           <AppScreenshot
             src="/images/ref_work_map.PNG"
             alt="지도 화면"
-            width={180}
-            height={360}
+            width={160}
+            height={320}
             caption="Step 1: 지도에서 일감 탐색"
           />
           <AppScreenshot
             src="/images/ref_work_map_sel.PNG"
             alt="지도에서 일감 선택 화면"
-            width={180}
-            height={360}
-            caption="Step 2: 일감 상세보기"
+            width={160}
+            height={320}
+            caption="Step 2: 일감 선택"
+          />
+          <AppScreenshot
+            src="/images/ref_work_detail.PNG"
+            alt="일감 상세 페이지"
+            width={160}
+            height={320}
+            caption="Step 3: 일감 상세 정보 확인"
           />
         </div>
 

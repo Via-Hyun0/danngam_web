@@ -207,20 +207,27 @@ export default function Home() {
 
       {/* 실제 앱 화면 섹션 */}
       <Section background="white" title="실제 앱 화면" subtitle="단감의 완성된 앱을 직접 확인해보세요" centered>
-        <div className="flex justify-center gap-8">
+        <div className="flex justify-center gap-6 flex-wrap">
           <AppScreenshot
             src="/images/ref_work_map.PNG"
             alt="지도 화면"
-            width={200}
-            height={400}
+            width={180}
+            height={360}
             caption="지도에서 일감 탐색"
           />
           <AppScreenshot
             src="/images/ref_work_list.PNG"
             alt="일감 리스트 화면"
-            width={200}
-            height={400}
+            width={180}
+            height={360}
             caption="일감 리스트 보기"
+          />
+          <AppScreenshot
+            src="/images/ref_work_detail.PNG"
+            alt="일감 상세 페이지"
+            width={180}
+            height={360}
+            caption="일감 상세 정보"
           />
         </div>
       </Section>
